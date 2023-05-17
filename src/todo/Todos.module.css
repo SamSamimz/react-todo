@@ -1,9 +1,15 @@
 .todos {
-  width: 50%;
+  width: calc(100vw - 20rem);
   background-color: #333;
   color: white;
   padding: 0.5rem;
   border-radius: 0.6rem;
   overflow-y: scroll;
   height: 60vh;
+}
+
+@media screen and (max-width: 700px) {
+  .todos {
+    width: calc(100vw - 5rem);
+  }
 }
